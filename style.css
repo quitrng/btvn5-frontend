@@ -1,0 +1,141 @@
+:root {
+  --main-color: #eff6fd;
+  --primary-color: #1e3a5f;
+  --badge-color: #ff0000;
+  --font-color: #FFFFFF;
+  --font-color-p: #ff0000;
+  --space-unit: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-unit) 30px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #9cc9ff;
+}
+
+/* Hero: nằm ngay dưới header */
+.hero {
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 80px var(--space-unit);
+}
+
+.hero h1 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.hero p {
+  padding: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.btn-hero {
+  padding: 10px 24px;
+  background-color: var(--badge-color);
+  color: var(--font-color);
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.section-title {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: var(--primary-color);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 600px; 
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.product-card {
+  position: relative;
+  width: 150px;
+  border-radius: 15px;
+  background-color: var(--main-color);
+}
+
+.badge-sale {
+  position: absolute;
+  padding: 5px;
+  background-color: var(--badge-color);
+  color: var(--font-color);
+  border-radius: var(--space-unit);
+  top: var(--space-unit);
+  right: var(--space-unit);
+}
+
+.btn-heart {
+  position: absolute;
+  top: var(--space-unit);
+  left: var(--space-unit);
+}
+
+img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+h3,
+p {
+  padding-left: 10px;
+}
+
+p {
+  padding-bottom: 15px;
+  color: var(--font-color-p);
+}
+
+.btn-buy {
+  width: 100px;
+  margin: 0 0 10px 10px;
+  padding: 6px 0;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  background-color: #FFFFFF;
+}
